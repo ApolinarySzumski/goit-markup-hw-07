@@ -236,7 +236,7 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.projects-list--graphics {
+.projects-list-graphics {
   display: block;
 }
 /* projects section */
@@ -294,7 +294,7 @@ body {
   justify-content: center;
   background-color: #ffffff;
 }
-.social--icon {
+.social-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
@@ -305,7 +305,7 @@ body {
   transition-duration: 250ms;
   cursor: pointer;
 }
-.social:hover .social--icon {
+.social:hover .social-icon {
   background-color: #2196f3;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -337,7 +337,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.our-clients-container--icon {
+.our-clients-container__icon {
   fill: #afb1b8;
   width: 106px;
   height: 60px;
@@ -348,7 +348,7 @@ body {
   transition-duration: 250ms;
   cursor: pointer;
 }
-.our-clients-container__image:hover .our-clients-container--icon {
+.our-clients-container__image:hover .our-clients-container__icon {
   fill: #2196f3;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -374,14 +374,14 @@ body {
   display: flex;
   flex-direction: column;
 }
-.footer-list--white-text {
+.footer-list__white-text {
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
   margin-top: 20px;
   font-style: normal;
 }
-.footer-list--mail-number {
+.footer-list__mail-number {
   margin-top: 9px;
   margin-bottom: 9px;
   color: #757575;
@@ -389,12 +389,12 @@ body {
   text-decoration: none;
   font-style: normal;
 }
-.footer-list--mail-number:hover {
+.footer-list__mail-number:hover {
   color: #2196f3;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.footer-list--logo {
+.footer-list__logo {
   color: #ffffff;
   font-family: "Raleway";
   font-size: 26px;
@@ -407,7 +407,7 @@ body {
   flex-direction: column;
   padding: 72px 0 100px 70px;
 }
-.join-us--header-3 {
+.join-us__header-3 {
   font-size: 14px;
   line-height: 1.17;
   font-weight: 700;
@@ -430,7 +430,7 @@ body {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.join-us--icon {
+.join-us__icon {
   width: 20px;
   height: 20px;
   fill: #ffffff;
@@ -452,7 +452,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-.newsletter--sign-up {
+.newsletter__sign-up {
   display: block;
   color: #ffffff;
   font-weight: 700;
@@ -461,7 +461,7 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
-.newsletter--input {
+.newsletter__input {
   padding: 15px 295px 15px 16px;
   background-color: #2f303a;
   font-size: 16px;
@@ -474,7 +474,7 @@ body {
   height: 50px;
   width: 358px;
 }
-.newsletter--input::placeholder {
+.newsletter__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 .newsletter__button {
@@ -497,7 +497,7 @@ body {
   padding: 10px 76px 10px 42px;
   cursor: pointer;
 }
-.newsletter--submit-svg {
+.newsletter__submit-svg {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -545,12 +545,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-.modal--cross {
+.modal__cross {
   width: 11px;
   height: 11px;
   fill: #000000;
 }
-.modal--form-header {
+.modal__form-header {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.172;
@@ -567,7 +567,7 @@ body {
   margin: 0 40px;
   gap: 10px;
 }
-.modal--describe {
+.modal__describe {
   font-size: 12px;
   line-height: 1.172;
   letter-spacing: 0.01em;
@@ -575,20 +575,20 @@ body {
   display: block;
   margin-bottom: 4px;
 }
-.modal-input {
+.modal__input {
   position: relative;
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 42px;
 }
-.modal-input:focus {
+.modal__input:focus {
   border-color: #2196f3;
   outline: none;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.modal--person-icon {
+.modal__person-icon {
   width: 12px;
   height: 12px;
   position: absolute;
@@ -596,12 +596,12 @@ body {
   left: 55px;
   top: 107px;
 }
-.modal__data-form:focus-within .modal--person-icon {
+.modal__data-form:focus-within .modal__person-icon {
   fill: #2196f3;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.modal--telephone-icon {
+.modal__telephone-icon {
   width: 13px;
   height: 13px;
   position: absolute;
@@ -609,12 +609,12 @@ body {
   left: 54.27px;
   top: 174.26px;
 }
-.modal__telephone-form:focus-within .modal--telephone-icon {
+.modal__telephone-form:focus-within .modal__telephone-icon {
   fill: #2196f3;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.modal--email-icon {
+.modal__email-icon {
   width: 15px;
   height: 12px;
   position: absolute;
@@ -622,7 +622,7 @@ body {
   left: 53.5px;
   top: 243px;
 }
-.modal__email-form:focus-within .modal--email-icon {
+.modal__email-form:focus-within .modal__email-icon {
   fill: #2196f3;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -630,7 +630,7 @@ body {
 .modal__textarea-form {
   margin-top: 10px;
 }
-.modal--textarea {
+.modal__textarea {
   width: 448px;
   height: 120px;
   resize: none;
@@ -638,29 +638,29 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.modal--textarea::placeholder {
+.modal__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.172;
   letter-spacing: 0.01em;
 }
-.modal__textarea-form:focus-within .modal--textarea {
+.modal__textarea-form:focus-within .modal__textarea {
   border-color: #2196f3;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   outline: none;
 }
-.modal--regulations__input {
+.modal__regulations-input {
   background-color: #2196f3;
   border-radius: 2px;
 }
-.modal--regulations-text {
+.modal__regulations-text {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: #757575;
 }
-.modal--underlined {
+.modal__underlined {
   color: #2196f3;
   text-decoration: underline;
 }
@@ -776,7 +776,7 @@ body {
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
-.net--image {
+.net__image {
   display: block;
   object-fit: cover;
   object-position: top;
@@ -793,12 +793,12 @@ body {
   border-style: solid;
   border-color: #eeeeee;
 }
-.net--black-text {
+.net__black-text {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
 }
-.net--grey-text {
+.net__grey-text {
   color: #757575;
   line-height: 1.1875;
   padding-top: 4px;
