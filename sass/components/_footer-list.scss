@@ -18,9 +18,7 @@
     color: getColor("grey");
     text-decoration: none;
     &:hover {
-      color: getColor("main-blue");
-      transition: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 250ms;
+      @extend %hover-color-blue-extend;
     }
   }
   &__logo {

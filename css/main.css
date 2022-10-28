@@ -1,7 +1,18 @@
-.footer-list__mail-number,
-.footer-list__white-text {
+.footer-list__mail-number, .footer-list__white-text {
   line-height: 1.71;
   font-style: normal;
+}
+
+.footer-list__mail-number:hover, .header-right__mail-number:hover, .header-mid__menu:hover {
+  color: #2196f3;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.modal__email-form:focus-within .modal-email-icon, .modal__telephone-form:focus-within .modal__telephone-icon, .modal__data-form:focus-within .modal__person-icon {
+  fill: #2196f3;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 body {
@@ -61,11 +72,6 @@ body {
 .header-mid__menu:visited {
   color: #212121;
 }
-.header-mid__menu:hover {
-  color: #2196f3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
 .header-mid--current::after {
   display: block;
   width: 100%;
@@ -92,10 +98,7 @@ body {
   text-decoration: none;
 }
 .header-right__mail-number:hover {
-  color: #2196f3;
   fill: #2196f3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .header-right__mail-number svg {
   margin-right: 10px;
@@ -163,7 +166,15 @@ body {
   box-sizing: border-box;
   padding-bottom: 94px;
 }
-.lorem-ipsum__lorem-image {
+
+.lorem-list {
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.lorem-list__lorem-image {
   box-sizing: border-box;
   height: 120px;
   width: 270px;
@@ -172,14 +183,6 @@ body {
   align-items: center;
   justify-content: center;
   margin: 94px 0 30px 0;
-}
-
-.lorem-list {
-  list-style: none;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
 }
 .lorem-list--header-4 {
   font-weight: 700;
@@ -255,8 +258,7 @@ body {
   justify-content: space-between;
 }
 .people-list__picture {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   background-color: #ffffff;
@@ -383,11 +385,6 @@ body {
   color: #757575;
   text-decoration: none;
 }
-.footer-list__mail-number:hover {
-  color: #2196f3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
 .footer-list__logo {
   color: #ffffff;
   font-family: "Raleway";
@@ -448,6 +445,15 @@ body {
   display: flex;
   flex-direction: row;
 }
+.newsletter__sign-up {
+  display: block;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
 .newsletter__input {
   padding: 15px 295px 15px 16px;
   background-color: #2f303a;
@@ -460,12 +466,6 @@ body {
   color: #ffffff;
   height: 50px;
   width: 358px;
-}
-.newsletter__input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-.newsletter__input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
 }
 .newsletter__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -588,11 +588,6 @@ body {
   left: 55px;
   top: 107px;
 }
-.modal__data-form:focus-within .modal__person-icon {
-  fill: #2196f3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
 .modal__telephone-icon {
   width: 13px;
   height: 13px;
@@ -601,11 +596,6 @@ body {
   left: 54.27px;
   top: 174.26px;
 }
-.modal__telephone-form:focus-within .modal__telephone-icon {
-  fill: #2196f3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
 .modal__email-icon {
   width: 15px;
   height: 12px;
@@ -613,11 +603,6 @@ body {
   fill: #212121;
   left: 53.5px;
   top: 243px;
-}
-.modal__email-form:focus-within .modal-email-icon {
-  fill: #2196f3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 .modal__textarea-form {
   margin-top: 10px;
@@ -635,18 +620,6 @@ body {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-.modal__textarea::-moz-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.172;
-  letter-spacing: 0.01em;
-}
-.modal__textarea:-ms-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.172;
-  letter-spacing: 0.01em;
 }
 .modal__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -715,8 +688,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.buttons__hover-button:hover,
-.buttons__hover-button:focus {
+.buttons__hover-button:hover, .buttons__hover-button:focus {
   background-color: #2196f3;
   color: #ffffff;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
@@ -740,8 +712,7 @@ body {
   gap: 30px;
 }
 .net__container-card:hover {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 1px 4px 6px rgba(0, 0, 0, 0.16),
-    0 4px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06);
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   cursor: pointer;
@@ -773,9 +744,7 @@ body {
 }
 .net__image {
   display: block;
-  -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: top;
   object-position: top;
 }
 .net__figcaption-settings {
@@ -799,4 +768,4 @@ body {
   color: #757575;
   line-height: 1.1875;
   padding-top: 4px;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
