@@ -1,7 +1,3 @@
-# Application view:
-
-https://apolinaryszumski.github.io/goit-markup-hw-07/
-
 # To run application on localhost:
 
 Use Live Server plug-in
